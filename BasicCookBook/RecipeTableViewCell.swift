@@ -57,6 +57,7 @@ class RecipeTableViewCell: UITableViewCell {
     }
     
     func commonInit() {
+        self.selectionStyle = .none
         self.contentView.addSubview(shadowView)
         self.shadowView.addSubview(containerView)
         self.containerView.addSubview(recipeImageView)
@@ -65,8 +66,8 @@ class RecipeTableViewCell: UITableViewCell {
         shadowView.snp.makeConstraints { make in
             make.left.equalTo(self.contentView.snp.left).offset(20)
             make.top.equalTo(self.contentView.snp.top).offset(20)
-            make.width.equalTo(335)
-            make.height.equalTo(350)
+            make.right.equalTo(self.contentView.snp.right).offset(-20)
+            make.bottom.equalTo(self.contentView.snp.bottom).offset(-20)
         }
         containerView.snp.makeConstraints { make in
             make.left.equalTo(self.shadowView.snp.left).offset(0)
