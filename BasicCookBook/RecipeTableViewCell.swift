@@ -36,6 +36,7 @@ class RecipeTableViewCell: UITableViewCell {
     }()
     var nameLabel: UILabel = {
         let label = UILabel()
+        label.backgroundColor = .lightGray
         return label
     }()
   

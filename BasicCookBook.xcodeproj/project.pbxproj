@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0D666ECD32F0759CA56783DA /* Pods_BasicCookBook_BasicCookBookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B52C628D4218E610855887 /* Pods_BasicCookBook_BasicCookBookUITests.framework */; };
+		5D98746B2655276100149A68 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D98746A2655276100149A68 /* DetailsViewController.swift */; };
 		5DD3E6E32654FA4D003270AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD3E6E22654FA4D003270AA /* AppDelegate.swift */; };
 		5DD3E6E52654FA4D003270AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD3E6E42654FA4D003270AA /* SceneDelegate.swift */; };
 		5DD3E6E72654FA4D003270AA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD3E6E62654FA4D003270AA /* HomeViewController.swift */; };
@@ -44,6 +45,7 @@
 		053439648F5DBD388D2E84F1 /* Pods-BasicCookBook-BasicCookBookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicCookBook-BasicCookBookUITests.release.xcconfig"; path = "Target Support Files/Pods-BasicCookBook-BasicCookBookUITests/Pods-BasicCookBook-BasicCookBookUITests.release.xcconfig"; sourceTree = "<group>"; };
 		51003F99E54814DEC2E30EBD /* Pods-BasicCookBookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicCookBookTests.debug.xcconfig"; path = "Target Support Files/Pods-BasicCookBookTests/Pods-BasicCookBookTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5264DE0DC401BF7F3E7F5993 /* Pods-BasicCookBookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicCookBookTests.release.xcconfig"; path = "Target Support Files/Pods-BasicCookBookTests/Pods-BasicCookBookTests.release.xcconfig"; sourceTree = "<group>"; };
+		5D98746A2655276100149A68 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		5DD3E6DF2654FA4D003270AA /* BasicCookBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicCookBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DD3E6E22654FA4D003270AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DD3E6E42654FA4D003270AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,7 +109,6 @@
 				51003F99E54814DEC2E30EBD /* Pods-BasicCookBookTests.debug.xcconfig */,
 				5264DE0DC401BF7F3E7F5993 /* Pods-BasicCookBookTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -139,6 +140,7 @@
 				5DD3E6E22654FA4D003270AA /* AppDelegate.swift */,
 				5DD3E6E42654FA4D003270AA /* SceneDelegate.swift */,
 				5DD3E6E62654FA4D003270AA /* HomeViewController.swift */,
+				5D98746A2655276100149A68 /* DetailsViewController.swift */,
 				5DD3E71D26550026003270AA /* HomeViewModel.swift */,
 				5DD3E722265500BB003270AA /* RecipeTableViewCell.swift */,
 				5DD3E7182654FBBD003270AA /* Recipe.swift */,
@@ -420,6 +422,7 @@
 				5DD3E6E32654FA4D003270AA /* AppDelegate.swift in Sources */,
 				5DD3E6E52654FA4D003270AA /* SceneDelegate.swift in Sources */,
 				5DD3E723265500BB003270AA /* RecipeTableViewCell.swift in Sources */,
+				5D98746B2655276100149A68 /* DetailsViewController.swift in Sources */,
 				5DD3E71E26550026003270AA /* HomeViewModel.swift in Sources */,
 				5DD3E7192654FBBD003270AA /* Recipe.swift in Sources */,
 			);

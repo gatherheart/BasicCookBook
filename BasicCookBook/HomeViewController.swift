@@ -14,6 +14,7 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.isHidden = true
         viewModel = HomeViewModel()
         tableView = UITableView()
         tableView.register(RecipeTableViewCell.self, forCellReuseIdentifier: RecipeTableViewCell.reuseIdentifier)
@@ -38,6 +39,9 @@ extension HomeViewController: UITableViewDelegate {
         return UITableView.automaticDimension
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailedVC = DetailsViewController()
+        detailedVC.recipe = viewModel.items[indexPath.row]
+        self.present(detailedVC, animated: true)
     }
 }
 
