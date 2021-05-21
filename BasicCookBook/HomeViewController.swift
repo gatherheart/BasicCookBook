@@ -11,6 +11,7 @@ class HomeViewController: UIViewController {
     
     var viewModel: HomeViewModel!
     var tableView: UITableView!
+    var presentationManager = PresentationManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +42,10 @@ extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailedVC = DetailsViewController()
         detailedVC.recipe = viewModel.items[indexPath.row]
+        presentationManager.direction = .left
+        presentationManager.disableCompactHeight = true
+        detailedVC.transitioningDelegate = presentationManager
+        detailedVC.modalPresentationStyle = .custom
         self.present(detailedVC, animated: true)
     }
 }
